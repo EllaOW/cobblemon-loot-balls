@@ -9,12 +9,32 @@
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "cobblemon:exp_candy_xs",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
               "function": "minecraft:set_count"
             }
           ],
           "name": "cobblemon:great_ball",
-          "weight": 8
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -23,46 +43,30 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "cobblemon:super_potion",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 14.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "cobblemon:max_ether",
-          "weight": 7
+          "name": "minecraft:iron_nugget",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"starter\"}"
+            },
+            {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2.0,
-                "min": 1.0
-              },
+              "count": 1.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "cobblemon:elixir",
-          "weight": 7
+          "name": "ftbquests:lootcrate",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -77,23 +81,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:golden_apple",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4.0,
-                "min": 2.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "cobblemon:max_revive",
+          "name": "cobblemon:exp_candy_s",
           "weight": 4
         },
         {
@@ -103,13 +91,29 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 24.0,
-                "min": 16.0
+                "max": 3.0,
+                "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:emerald",
+          "name": "cobblemon:exp_candy_m",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"gambling\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
           "weight": 3
         },
         {
@@ -117,12 +121,48 @@
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
               "function": "minecraft:set_count"
             }
           ],
-          "name": "cobblemon:exp_candy_s",
-          "weight": 2
+          "name": "minecraft:emerald",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_ingot",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_ingot",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
@@ -134,7 +174,267 @@
             }
           ],
           "name": "cobblemon:rare_candy",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "cobblemon:exp_candy_l",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "cobblemon:relic_coin_pouch",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:netherite_ingot",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"warp\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"gems\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"riches\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"bottlecaps\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
           "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"endloot\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "cobblemon:exp_candy_xl",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"netherloot\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"commonitemlist3\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"commonitemlist2\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"commonitemlist\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"charms\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "cobblemon:ability_patch"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"ultrararedrops\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{type:\"pirate_s_booty\"}"
+            },
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ftbquests:lootcrate"
         }
       ],
       "rolls": 1.0

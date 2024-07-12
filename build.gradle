@@ -39,6 +39,7 @@ repositories {
 	maven { url "https://maven.shedaniel.me/" }
 	maven { url "https://maven.terraformersmc.com/releases/" }
 	maven { url 'https://maven.wispforest.io' }
+	maven { url 'https://maven.saps.dev/releases/' } 
 }
 
 loom {
@@ -73,6 +74,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 	modImplementation("com.cobblemon:fabric:${project.cobblemon_version}")
+	modImplementation("dev.ftb.mods:ftb-quests-fabric:2001.4.6") 
 	// owo config
 	annotationProcessor modImplementation("io.wispforest:owo-lib:${project.owo_version}")
 

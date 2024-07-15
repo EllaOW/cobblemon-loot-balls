@@ -76,18 +76,6 @@ public class LootBallsLootTableModifiers {
                                             .apply(SetLootTableLootFunction.builder(BlockEntityType.CHEST, LootBallsLootTableProvider.POKE_LOOT_TABLE))
                                             .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1F)))
                                             .weight(LootBallsUtils.COMMON_WEIGHT)
-                            )
-                            .with(
-                                    ItemEntry.builder(LootBallsBlocks.GREAT_LOOT_BALL)
-                                            .apply(SetLootTableLootFunction.builder(BlockEntityType.CHEST, LootBallsLootTableProvider.GREAT_LOOT_TABLE))
-                                            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1F)))
-                                            .weight(LootBallsUtils.UNCOMMON_WEIGHT)
-                            )
-                            .with(
-                                    ItemEntry.builder(LootBallsBlocks.ULTRA_LOOT_BALL)
-                                            .apply(SetLootTableLootFunction.builder(BlockEntityType.CHEST, LootBallsLootTableProvider.ULTRA_LOOT_TABLE))
-                                            .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1F)))
-                                            .weight(LootBallsUtils.RARE_WEIGHT)
                             );
 
                     tableBuilder.pool(poolBuilder);
